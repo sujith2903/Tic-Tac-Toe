@@ -1,0 +1,59 @@
+* {
+    font-size: calc(10px + 0.5vw);
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 5rem;
+    margin-top: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-names {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.player1, .player2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3px;
+}
+
+button{
+    width: 10rem;
+}
+
+.game-area{
+    display: flex;
+    gap:150px;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.game-board{
+    display: grid;
+    width:25rem;
+    height:25rem;
+    grid-template-columns: 1fr 1fr 1fr;    
+}
+
+.game-grid{
+    border:1px solid black;
+}
