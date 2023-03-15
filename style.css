@@ -9,11 +9,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0) 5% , cyan);
+    background-attachment: fixed;
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin-top: 25px;
+    text-shadow: 0px 0px 5px white;
 }
 
 form{
@@ -21,6 +24,7 @@ form{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
 .player-names {
@@ -36,13 +40,39 @@ form{
     gap:3px;
 }
 
+label{
+    font-size: 1.3rem;
+    color: white;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+input[type='text']{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
 button{
     width: 10rem;
+    height:2rem;
+    background-color:rgb(182, 201, 14);
+    border: transparent;
+    border-radius: 5px;
+}
+
+button:hover{
+    border: 5px solid orange;
 }
 
 .game-area{
+    display: none;
+    flex-direction: column;
+    gap:10px;
+}
+
+.show{
     display: flex;
-    gap:150px;
+    gap: 10px;
     margin-top: 25px;
     align-items: center;
 }
@@ -51,9 +81,23 @@ button{
     display: grid;
     width:25rem;
     height:25rem;
-    grid-template-columns: 1fr 1fr 1fr;    
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;   
 }
 
 .game-grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border:1px solid black;
+    box-shadow: 0px 0px 25px 5px rgb(0, 0, 0);
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);;
+    font-size: 5rem;
+    font-family:"Caveat Brush"
+}
+
+.current-player,.winning-player{
+    font-size: 2rem;
+    font-weight: 200;
 }
